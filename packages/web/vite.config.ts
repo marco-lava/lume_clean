@@ -4,7 +4,6 @@ import tailwind from "@tailwindcss/vite";
 import path from "path";
 import honoDevPlugin from "./vite/__plugins/hono-dev-plugin";
 import assetOptimizerPlugin from "./vite/__plugins/asset-optimizer-plugin";
-import ports from "../../__ports.cjs";
 
 const root = path.resolve(__dirname, "../..");
 
@@ -26,13 +25,6 @@ export default defineConfig(({ mode }) => {
       alias: {
         "@": path.resolve(__dirname, "./src/web"),
       },
-    },
-    server: {
-      port: ports.website,
-      strictPort: true,
-      allowedHosts: true,
-      hmr: { overlay: false },
-      cors: false,
     },
   };
 });

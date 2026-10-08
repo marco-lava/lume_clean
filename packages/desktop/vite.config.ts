@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import path from "node:path";
 import electron from "vite-plugin-electron/simple";
-import ports from "../../__ports.cjs";
 
 export default defineConfig({
   build: {
@@ -19,9 +18,4 @@ export default defineConfig({
       },
     }),
   ],
-  server: {
-    port: ports.desktop,
-    strictPort: true,
-    allowedHosts: true,
-  },
 });
