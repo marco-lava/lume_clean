@@ -10,7 +10,9 @@
     "dist": "vite build && electron-builder",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    
+  },
   "devDependencies": {
     "@types/node": "^24",
     "electron": "^30.0.1",
